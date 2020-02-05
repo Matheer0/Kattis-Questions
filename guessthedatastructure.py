@@ -92,3 +92,6 @@ if __name__ == '__main__':
         result = execute_commands(begin_index, end_index, lines)
         print(result)
 
+
+
+
