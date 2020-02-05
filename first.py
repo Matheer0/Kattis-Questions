@@ -1,4 +1,4 @@
-mport sys
+import sys
 
 
 # check if 2 lists are the same
@@ -73,10 +73,6 @@ def execute_commands(start, finish, commands):
 
 
 if __name__ == '__main__':
-    """
-    f = open('guessthedatastructure_sample.in')
-    lines = f.readlines()
-    """
 
     lines = sys.stdin.readlines()
     number_of_lines = len(lines)
@@ -88,9 +84,9 @@ if __name__ == '__main__':
             line_mark.append(i)
 
     for number in line_mark:
-        # Line No. where we start to execute for this iteration
+        # Line number where we start to execute for this iteration
         begin_index = number + 1
-        # Line No. where we finish
+        # Line number  where we finish
         end_index = number + int(lines[number].split()[0])
         result = execute_commands(begin_index, end_index, lines)
         print(result)
